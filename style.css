@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.header-elements{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  margin-top: 30px;
+}
+.nav-list a {
+  color: darkblue;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 25px;
+  transition: all.45s ease;
+}
+.nav-list a:hover {
+  color: blue;
+}
+.nav-list a.active {
+  color: black;
+}
+li {
+  list-style-type: none;
+  overflow: hidden;
+}
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+.appointment{
+    border-radius: 20px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: lightskyblue;
+    color: blue;
+    border: none;
+}
+.appointment:hover{
+    background-color: darkblue;
+    color: white;
+}
+span{
+    color: darkblue;
+}
+h1{
+    color: skyblue;
+}
+.same{
+    color: darkblue;
+}
+.diff{
+    color: #5FBDFF;
+    font-size: 15px;
+}
+.background-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+  /* width: 1519px; */
+}
+.onboarding{
+  background-color: red;
+  /* display: flex; */
+  /* gap:30px; */
+}
+.services{
+    border-radius: 20px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: lightskyblue;
+    color: blue;
+    border: none;
+    margin-top: 30px;
+}
+.services:hover{
+    background-color: darkblue;
+    color: white;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 50px;
+}
