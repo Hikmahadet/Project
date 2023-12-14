@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  /* display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: transparent; */
+  padding: 22px 15%;
+  border-bottom: 1px solid transparent;
+  transition: all.45s ease;
+}
+
+.header-elements {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+li{
+    list-style-type: none;
+    overflow: hidden;
+}
+.nav-list {
+  /* position: fixed; */
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  right: 0;
+  z-index: 1000;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 15%;
+  background: blue;
+  /* border-bottom: 1px solid transparent; */
+  transition: all.45s ease;
+  /* background-color: blue; */
+}
+
+.nav-list a {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  /* margin: 0 25px; */
+  /* transition: all.45s ease; */
+}
+
+.nav-list a:hover {
+  color: skyblue;
+}
+.nav-list a.active {
+  color:skyblue;
+}
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+#menu-icon {
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+.appointment {
+  border-radius: 20px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: lightskyblue;
+  color: blue;
+  border: none;
+}
+.appointment:hover {
+  background-color: darkblue;
+  color: white;
+}
+span {
+  color: darkblue;
+}
+.same {
+  color: darkblue;
+}
+.diff {
+  color: #5fbdff;
+  font-size: 15px;
+}
+.aboutusimage{
+    width: 100%;
+    height: 500px;
+}
+.sectioncontainer{
+    display: flex;
+    gap: 20px;
+    padding: 22px 15%;
+}
+.groupul {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 30px;
+  gap: 2rem;
+  /* list-style-type: square; */
+}
+.groupul li {
+  text-align: left;
+  /* list-style-type: square; */
+}
+.centertext{
+    width: 400px;
+    text-align: left;
+    margin-top: 30px;
+}
+.wel{
+     color:#5fbdff;
+}
+.best{
+   color: darkblue;
+   font-weight: 900;
+   font-size:xx-large;
+}
+.view {
+  width: 317px;
+  height: 46px;
+  background-color: #3081d0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.docs {
+  /* height: 142px; */
+  background-color: #5fbdff;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+.doc {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* border: 1px solid skyblue; */
+  /* width: 317px; */
+  width: 100%;
+  /* background-color: skyblue; */
+}
+figure {
+  width: 317px;
+}
+.pictureone {
+  display: grid;
+  width: 317px;
+  /* justify-content: center; */
+}
+.pict {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.doctortext {
+  text-align: center;
+  margin-top: 50px;
+}
+.place {
+  font-size: larger;
+  font-weight: bold;
+  color: darkblue;
+  font: 1.5em sans-serif;
+}
+.doctors,.welcome{
+    padding: 22px 15%;
+}
+.contact-component {
+  width: 200px;
+  height: 200px;
+  background-color: #c2d9ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-component:hover {
+  background-color: #87c4ff;
+  cursor: pointer;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+.component {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contactt{
+    padding: 22px 15%;
+    justify-content: center;
+}
+.lastsection {
+  background-color: darkblue;
+  margin-top: 50px;
+  /* display: flex; */
+}
+.lastone,
+.copyright {
+  color: white;
+}
+.lastthree {
+  display: flex;
+  gap: 30px;
+}
+.everything,
+.contactt {
+  padding: 22px 15%;
+}
+.lastone,
+.ptext {
+  margin-top: 10px;
+}
+hr,
+.copyright {
+  margin-top: 30px;
+}
+.dress {
+  padding-inline: 20px;
+  padding-block: 20px;
+  border-radius: 5px;
+  background-color: #5fbdff;
+  color: darkblue;
+  border: none;
+}
+.dress:hover {
+  background-color: #3081d0;
+  color: white;
+}
+.cal {
+  color: skyblue;
+}
