@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY HOSPITAL</title>
+    <link rel="stylesheet" href="signin.css" />
+    <link rel="stylesheet" href="script.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e2a1053ece.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="ical">MED<span>ICAL</span></h1>
+      <div class="header-elements">
+        <div class="Emergency">
+          <div class="direction">
+            <i class="fa-solid fa-phone-volume fa-xs"></i>
+            <h3 class="same">Emergency</h3>
+            <h3 class="diff">(237) 681-812-255</h3>
+          </div>
+        </div>
+        <div class="work">
+          <i class="fa-solid fa-clock fa-xs" style="color: #221f51"></i>
+          <h3 class="same">WORK-HOUR</h3>
+          <h3 class="diff">09:00 - 20:00 Everyday</h3>
+        </div>
+        <div class="location">
+          <i class="fa-regular fa-location-dot"></i>
+          <h3 class="same">LOCATION</h3>
+          <h3 class="diff">0123 Some Place</h3>
+        </div>
+      </div>
+    </header>
+    <ul class="nav-list" id="nav-list">
+      <div class="list">
+        <a href="index.html" class="active li-items">
+          <li>Home</li>
+        </a>
+        <a href="about.html" class="li-items">
+          <li>About us</li>
+        </a>
+        <a href="service.html" class="li-items">
+          <li>Services</li>
+        </a>
+        <a href="doctors.html" class="li-items">
+          <li>Doctors</li>
+        </a>
+        <a href="./contact.html" class="li-items">
+          <li>Contact</li>
+        </a>
+      </div>
+      <div class="right-top">
+        <!-- <i class="fa-solid fa-magnifying-glass fa-xs"></i> -->
+        <a href="signin.html" class="active signin">Sign in</a>
+        <a class="login">Sign up</a>
+        <a class="appointment">Appointment</a>
+      </div>
+    </ul>
+    <div class="menu-icon" id="menu-icon" onclick="myFunction()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    
+  <div class="signimg">
+            <img src="./images/half male doc.avif" alt="">
+    <div class="fill">
+                <h2>SIGN IN TO MEDICAL</h2>
+                
+    </div>
+  </div>
+  </section> 
+
+
+  <section>
+    <div class="wraper">
+      <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+      <div class="form-box sign">
+        <h2>Sign in</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+            <input type="email" required>
+            <label>Password</label>
+          </div>
+          <div class="forgot">
+            <label><input type="checkbox">Remember me?</label>
+            <a href="#">Forgot password</a>
+          </div>
+          <button type="submit" class="mit">Sign in</button>
+          <div class="register">
+            <p>Don't have an account?<a href="#" class="register-link">Sign up</a></p>
+          </div>
+        </form>
+      </div>
+
+      
+      <div class="form-box signup">
+        <h2>Sign up</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+            <input type="text" required>
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+            <input type="email" required>
+            <label>Password</label>
+          </div>
+          <div class="forgot">
+            <label><input type="checkbox"> I Agree to the terms and condition</label>
+            <!-- <a href="#">Forgot password</a> -->
+          </div>
+          <button type="submit" class="mit">Sign up</button>
+          <div class="register">
+            <p>Already have an account?<a href="#" class="login-link">Sign in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+    </body>
+    <!-- <loginlink=regis></loginlink> -->
+    </html>

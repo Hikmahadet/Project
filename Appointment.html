@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Appointment.css">
+    <script
+      src="https://kit.fontawesome.com/e2a1053ece.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+        <header>
+      <h1 class="ical">MED<span>ICAL</span></h1>
+      <div class="header-elements">
+        <div class="Emergency">
+          <div class="direction">
+            <i class="fa-solid fa-phone-volume fa-xs"></i>
+            <h3 class="same">Emergency</h3>
+            <h3 class="diff">(237) 681-812-255</h3>
+          </div>
+        </div>
+        <div class="work">
+          <i class="fa-solid fa-clock fa-xs" style="color: #221f51"></i>
+          <h3 class="same">WORK-HOUR</h3>
+          <h3 class="diff">09:00 - 20:00 Everyday</h3>
+        </div>
+        <div class="location">
+          <i class="fa-regular fa-location-dot"></i>
+          <h3 class="same">LOCATION</h3>
+          <h3 class="diff">0123 Some Place</h3>
+        </div>
+      </div>
+    </header>
+    <ul class="nav-list" id="nav-list">
+      <div class="list">
+        <a href="#" class="li-items">
+          <li>Home</li>
+        </a>
+        <a href="about.html" class="li-items">
+          <li>About us</li>
+        </a>
+        <a href="service.html" class="li-items">
+          <li>Services</li>
+        </a>
+        <a href="doctors.html" class="li-items">
+          <li>Doctors</li>
+        </a>
+        <a href="./contact.html" class="li-items">
+          <li>Contact</li>
+        </a>
+      </div>
+      <div class="right-top">
+        <!-- <i class="fa-solid fa-magnifying-glass fa-xs"></i> -->
+        <a href="signin.html" class=" signin">Sign in</a>
+        <a class="login">Login</a>
+        <a class="active appointment">Appointment</a>
+      </div>
+    </ul>
+    <div class="menu-icon" id="menu-icon" onclick="myFunction()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <section class="aboutus">
+        <div class="abtimg">
+            <img class="aboutusimage" src="./images/photo-1551076805-e1869033e561.avif" alt="">
+        </div>
+    </section>
+
+    <section class="appointment_section">
+        <div class="formflex">
+      <!-- <div class="appointment_text"> -->
+
+          <h1 class="appoint">Book an appointment</h1>
+
+          <div class="formpic">
+            <p class="orders">In order to have access to one of the most qualified doctors in the most scheduled and organised way , book an appoinment with Medical hospital now.  Proper scheduling and appointment time with your doctors without any form of mixup. The consultation comes with a free general medical checkup </p>
+          <!-- <img class="backgroundimage" src="./images/doc.jpg" alt="doctor" /> -->
+        </div>
+      <!-- </div> -->
+
+
+  <form class="appointment_form">
+    <div class="row">
+    <div class="row1">
+        <div>
+        <input class="Email" type="text" name="Fullname" id="Fullname" placeholder="Full name *" required/>
+        </div>
+
+        <div>
+        <input class="Email" type="text" name="Fullname" id="Fullname" placeholder="Gender*" required/>
+        </div>
+
+        <div>
+        <input class="Email" type="number" name="Fullname" id="Fullname" placeholder="Phone number*" required/>
+        </div>
+  </div>
+
+  <div class="row2">
+        <div>
+        <input class="Email" type="text" name="Fullname" id="Fullname" placeholder="Email *" required/>
+        </div>
+
+        <div>
+        <input class="Email" type="text" name="Fullname" id="Fullname" placeholder="Date*" required/>
+        </div>
+
+        <div>
+        <input class="Email" type="text" name="Fullname" id="Fullname" placeholder="Doctor type*" required/>
+        </div>
+  </div>
+  </div>
+
+        <div>
+        <textarea class="textarea" placeholder="leave a message" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+      <div class="butn">
+      <button class="butt" type="button">Submit</button>
+      <button class="butt" type="reset">Clear input</button>
+      </div>
+  </form>
+  </div>
+
+
+  <div class="schedulehours">
+    
+        <div class="time">
+          <h2 class="day" class="time">Schedule hours</h2>
+            <ul class="day">
+                <li>Monaday</li>
+                <li> - </li>
+                <li>24hours</li>
+            </ul>
+
+            <ul class="day">
+                <li>Tuesday</li>
+                <li> - </li>
+                <li>24hours</li>
+            </ul>
+
+            <ul class="day">
+                <li>Wednesday</li>
+                <li> - </li>
+                <li>24hours</li>
+            </ul>
+
+            <ul class="day">
+                <li>Thursday</li>
+                <li> - </li>
+                <li>24hours</li>
+            </ul>
+
+            <ul class="day">
+                <li>Friday</li>
+                <li> - </li>
+                <li>24hours</li>
+            </ul>
+
+            <ul class="day">
+                <li>Saturday</li>
+                <li> - </li>
+                <li>24hours</li>
+            </ul>
+
+            <ul class="day">
+                <li>Sunday</li>
+                <li> - </li>
+                <li>24hours</li>
+            </ul>
+
+            <hr class="line">
+
+            <div class="direction">
+            <i class="fa-solid fa-phone-volume fa-xs"></i>
+            <h3>Emergency</h3>
+            <h3>(237) 681-812-255</h3>
+          </div>
+            
+        </div>
+    
+  </div>
+  </section> 
+
+  <section class="map">
+        <div class="maparea">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27913.470404946667!2d3.853041616578557!3d7.376561972307564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1702894277122!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <section class="contactt">
+    <div class="doctortext">
+      <h3 class="med">GET IN TOUCH</h3>
+      <h1 class="place">Contact</h1>
+    </div>
+
+    <div class="component">
+  <div class="contact-component">
+    <div class="cont">
+      <i class="fa-solid fa-phone-volume"></i>
+      <h3>EMERGENCY</h3>
+      <h3>08094567821</h3>
+    </div>
+  </div>
+
+  <div class="contact-component">
+    <div class="cont">
+      <i class="fa-solid fa-location-dot"></i>
+      <h3>LOCATION</h3>
+      <h3>Ibadan,Nigeria.</h3>
+    </div>
+  </div>
+
+  <div class="contact-component">
+    <div class="cont">
+      <i class="fa-solid fa-envelope"></i>
+      <h3>EMAIL</h3>
+      <h3>medic@gmail.com</h3>
+    </div>
+  </div>
+
+  <div class="contact-component">
+    <div class="cont">
+      <i class="fa-solid fa-clock"></i>
+      <h3>WORK-HOUR</h3>
+      <h3>24 hours service</h3>
+    </div>
+  </div>
+
+  </div>
+
+  </section>
+  <section class="lastsection">
+  <div class="everything">
+    <div class="lastthree">
+      <div class="lastone">
+        <h1 class="cal">MEDICAL</h1>
+        <div class="ptext">
+        <p>Leading the way in Medical Excellence, trusted care. </p>
+        </div>
+      </div>
+
+      <div class="lastone">
+        <h3>Important links</h3>
+        <div class="ptext">
+        <p>Appointment</p>
+        <p>Services</p>
+        <p>Doctors</p>
+        <p>About us</p>
+        </div>
+      </div>
+
+      <div class="lastone">
+        <h3>Contact us</h3>
+        <div class="ptext">
+        <p>call:(237)681-812-255</p>
+        <p>Email:medichospital@gmail.com</p>
+        <p>Address:Ibadan,Nigeria</p>
+        </div>
+      </div>
+      
+      <div class="lastone">
+        <h3>Newsletter</h3>
+        <div class="ptext">
+        <button class="dress">
+          Enter you email address
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="copyright">
+      <p>© 2023 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+  /* display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: transparent; */
+  padding: 22px 15%;
+  border-bottom: 1px solid transparent;
+  transition: all.45s ease;
+}
+
+.header-elements {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+li{
+    list-style-type: none;
+    overflow: hidden;
+}
+.nav-list {
+  /* position: fixed; */
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  right: 0;
+  z-index: 1000;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 15%;
+  background: blue;
+  /* border-bottom: 1px solid transparent; */
+  transition: all.45s ease;
+  /* background-color: blue; */
+}
+
+.nav-list a {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  /* margin: 0 25px; */
+  /* transition: all.45s ease; */
+}
+
+.nav-list a:hover {
+  color: skyblue;
+}
+.nav-list a.active {
+  color:skyblue;
+}
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+#menu-icon {
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+.appointment {
+  border-radius: 20px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: lightskyblue;
+  color: blue;
+  border: none;
+}
+.appointment:hover {
+  background-color: darkblue;
+  color: white;
+}
+span {
+  color: darkblue;
+}
+.same {
+  color: darkblue;
+}
+.diff {
+  color: #5fbdff;
+  font-size: 15px;
+}
+.imgcontact{
+    width: 100%;
+    height: 500px;
+    opacity: 60%;
+}
+.map{
+    padding: 22px 15%;
+}
+.place {
+  font-size: larger;
+  font-weight: bold;
+  color: darkblue;
+  font: 1.5em sans-serif;
+}
+.med {
+  color: blue;
+  font-size: small;
+}
+.doctortext {
+  /* text-align: center; */
+  margin-top: 50px;
+}
+form {
+  background-color: darkblue;
+  border-radius: 10px;
+  width: 491px;
+  height: 445px;
+}
+.Email {
+  width: 245px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: darkblue;
+}
+.textarea {
+  width: 491px;
+  height: 190px;
+  border: 1px solid white;
+  background-color: darkblue;
+}
+.butt {
+  width: 491px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: #3081d0;
+}
+.butt:hover {
+  background-color: skyblue;
+}
+.row{
+    display: flex;
+}
+.Emai{
+    width: 490px;
+    background-color: darkblue;
+    height: 50px;
+}
+form {
+  background-color: darkblue;
+  width: 486px;
+  height: fit-content;
+}
+.contact-component {
+  width: 200px;
+  height: 200px;
+  background-color: #c2d9ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-component:hover {
+  background-color: #87c4ff;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+.component {
+  display: flex;
+  gap: 20px;
+  
+  /* justify-content: center; */
+  /* margin-top: 20px;
+  margin-inline: auto;
+  width: fit-content;
+  height: fit-content; */
+}
+.colmn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.flexsection{
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+}
+.contactsect{
+    padding: 22px 15%;
+}
+.lastsection {
+  background-color: darkblue;
+  margin-top: 50px;
+  /* display: flex; */
+}
+.lastone,
+.copyright {
+  color: white;
+}
+.everything,
+.contactt {
+  padding: 22px 15%;
+}
+.lastone,
+.ptext {
+  margin-top: 10px;
+}
+hr,
+.copyright {
+  margin-top: 30px;
+}
+.pict {
+  width: fit-content;
+  height: fit-content;
+  margin-inline: auto;
+}
+.dress {
+  padding-inline: 20px;
+  padding-block: 20px;
+  border-radius: 5px;
+  background-color: #5fbdff;
+  color: darkblue;
+  border: none;
+}
+.dress:hover {
+  background-color: #3081d0;
+  color: white;
+}
+.cal {
+  color: skyblue;
+}
+.lastthree {
+  display: flex;
+  gap: 30px;
+}
+.signin{
+  border-radius: 5px;
+  padding-inline: 20px;
+  padding-block: 15px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+}
+.signin:hover{
+  background-color:#4694cb;
+}
+.login:hover{
+  background-color:#87c4ff;
+}
+.login{
+  border-radius: 5px;
+  padding-inline: 20px;
+  padding-block: 15px;
+  background-color:#c2d9ff;
+  color: black;
+  border: none;
+}

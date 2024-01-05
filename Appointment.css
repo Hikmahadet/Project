@@ -1,7 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header {
   /* display: flex;
@@ -28,10 +28,7 @@ header {
   gap: 20px;
   justify-content: space-between;
 }
-li{
-    list-style-type: none;
-    overflow: hidden;
-}
+
 .nav-list {
   /* position: fixed; */
   display: flex;
@@ -62,13 +59,8 @@ li{
   color: skyblue;
 }
 .nav-list a.active {
-  color:skyblue;
+  color: skyblue;
 }
-.list {
-  display: flex;
-  gap: 20px;
-}
-
 #menu-icon {
   font-size: 35px;
   z-index: 10001;
@@ -98,89 +90,97 @@ span {
   color: #5fbdff;
   font-size: 15px;
 }
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+li{
+    list-style-type: none;
+}
 .aboutusimage{
     width: 100%;
     height: 500px;
 }
-.sectioncontainer{
-    display: flex;
-    gap: 20px;
-    padding: 22px 15%;
+form {
+  background-color: darkblue;
+  border-radius: 10px;
+  width: 491px;
+  height: 445px;
 }
-.groupul {
-  display: flex;
-  /* justify-content: center; */
-  margin-top: 30px;
-  gap: 2rem;
-  /* list-style-type: square; */
+.Email {
+  width: 245px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: darkblue;
 }
-.groupul li {
-  text-align: left;
-  /* list-style-type: square; */
+.textarea {
+  width: 491px;
+  height: 190px;
+  border: 1px solid white;
+  background-color: darkblue;
 }
-.centertext{
-    width: 400px;
-    text-align: left;
-    margin-top: 30px;
-}
-.wel{
-     color:#5fbdff;
-}
-.best{
-   color: darkblue;
-   font-weight: 900;
-   font-size:xx-large;
-}
-.view {
-  width: 317px;
-  height: 46px;
+.butt {
+  width: 491px;
+  height: 50px;
+  border: 1px solid white;
   background-color: #3081d0;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
-.docs {
-  /* height: 142px; */
-  background-color: #5fbdff;
-  color: white;
-  text-align: center;
-  padding: 40px;
+.butt:hover {
+  background-color: skyblue;
 }
-.doc {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* border: 1px solid skyblue; */
-  /* width: 317px; */
-  width: 100%;
-  /* background-color: skyblue; */
-}
-figure {
-  width: 317px;
-}
-.pictureone {
-  display: grid;
-  width: 317px;
-  /* justify-content: center; */
-}
-.pict {
+.row {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
 }
-.doctortext {
+.formpic {
+  display: flex;
+  margin: 10px;
+}
+.orders{
+    font-size:20px;
+    font-weight: 300;
+    width: 500px;
+}
+.time ul{ 
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+    /* background-color: red; */
+    width:400px;   
+} 
+.formflex{
+    display: flex;
+    flex-direction: column;
+}
+.appointment_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.time{
+  background-color: darkblue;
+}
+.day{
+  color: white;
+  padding-inline: 20px;
+  padding-block: 20px; 
+}
+.time{
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 50px;
+  padding-inline: 20px;
+  padding-block: 20px;
 }
-.place {
-  font-size: larger;
-  font-weight: bold;
-  color: darkblue;
-  font: 1.5em sans-serif;
+.line{
+  margin-top: 10px;
 }
-.doctors,.welcome{
-    padding: 22px 15%;
+.direction{
+  color: white;
+  margin-top: 20px;
+}
+.map{
+  padding: 22px 15%;
 }
 .contact-component {
   width: 200px;
@@ -193,7 +193,6 @@ figure {
 }
 .contact-component:hover {
   background-color: #87c4ff;
-  cursor: pointer;
 }
 .cont {
   display: flex;
@@ -207,10 +206,28 @@ figure {
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+  margin-inline: auto;
+  width: fit-content;
+  height: fit-content;
 }
-.contactt{
-    padding: 22px 15%;
-    justify-content: center;
+.doctortext {
+  text-align: center;
+  margin-top: 50px;
+}
+.dress {
+  padding-inline: 20px;
+  padding-block: 20px;
+  border-radius: 5px;
+  background-color: #5fbdff;
+  color: darkblue;
+  border: none;
+}
+.dress:hover {
+  background-color: #3081d0;
+  color: white;
+}
+.cal {
+  color: skyblue;
 }
 .lastsection {
   background-color: darkblue;
@@ -237,18 +254,30 @@ hr,
 .copyright {
   margin-top: 30px;
 }
-.dress {
-  padding-inline: 20px;
-  padding-block: 20px;
+.pict {
+  width: fit-content;
+  height: fit-content;
+  margin-inline: auto;
+}
+.signin{
   border-radius: 5px;
-  background-color: #5fbdff;
-  color: darkblue;
+  padding-inline: 20px;
+  padding-block: 15px;
+  background-color: darkblue;
+  color: white;
   border: none;
 }
-.dress:hover {
-  background-color: #3081d0;
-  color: white;
+.signin:hover{
+  background-color:#4694cb;
 }
-.cal {
-  color: skyblue;
+.login:hover{
+  background-color:#87c4ff;
+}
+.login{
+  border-radius: 5px;
+  padding-inline: 20px;
+  padding-block: 15px;
+  background-color:#c2d9ff;
+  color: black;
+  border: none;
 }

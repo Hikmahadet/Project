@@ -3,36 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  /* display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px; */
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* background: transparent; */
-  padding: 22px 15%;
-  border-bottom: 1px solid transparent;
-  transition: all.45s ease;
-}
-
-.header-elements {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: space-between;
-}
-
 .nav-list {
-  /* position: fixed; */
+  position: fixed;
   display: flex;
-  margin-top: 80px;
+  top: 0;
   width: 100%;
   right: 0;
   z-index: 1000;
@@ -54,9 +28,19 @@ header {
   /* margin: 0 25px; */
   /* transition: all.45s ease; */
 }
-
+li {
+  place-self: center;
+  display: grid;
+}
+.right-top {
+  gap: 0.5em;
+  display: flex;
+}
 .nav-list a:hover {
   color: skyblue;
+}
+.nav-list a {
+  place-self: center;
 }
 .nav-list a.active {
   color: skyblue;
@@ -77,7 +61,7 @@ header {
   border: none;
 }
 .appointment:hover {
-  background-color: darkblue;
+  background-color: skyblue;
   color: white;
 }
 span {
@@ -91,7 +75,7 @@ span {
   font-size: 15px;
 }
 .onboarding {
-  margin-top: 30px;
+  margin-top: 3em;
   /* margin-left: 250px; */
   display: flex;
   flex-direction: row-reverse;
@@ -364,6 +348,7 @@ form {
 .formpic {
   display: flex;
   margin: 10px;
+  color: white;
 }
 .appointment_section {
   display: flex;
@@ -501,6 +486,28 @@ hr,
   height: fit-content;
   margin-inline: auto;
 }
+.signin {
+  border-radius: 5px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+}
+.signin:hover {
+  background-color: #4694cb;
+}
+.login:hover {
+  background-color: #87c4ff;
+}
+.login {
+  border-radius: 5px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: #c2d9ff;
+  color: black;
+  border: none;
+}
 @media (max-width: 1480px) {
   header {
     padding: 12px 2.5%;
@@ -532,17 +539,43 @@ hr,
   #menu-icon {
     display: block;
   }
-  .nav-list {
+  .nav_items {
     position: absolute;
     position: fixed;
-    top: 50px;
+    top: 100px;
     right: 0;
     left: 0;
+    text-align: center;
     display: none;
+    height: 0%;
     flex-direction: column;
     text-align: left;
-    transition: all.45s ease;
+    transition: all 300ms ease-in-out;
     padding-left: 20px;
+    background-color: blue;
+  }
+  .right-top {
+    height: 0%;
+    position: absolute;
+    position: fixed;
+    top: 300px;
+    flex-direction: column;
+    display: none;
+  }
+  .new_list {
+    height: 100%;
+    display: block;
+  }
+  .main_list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .list {
+    width: 100%;
+  }
+  .menu-icon {
+    place-self: center;
   }
   .nav-list a {
     display: block;
@@ -559,6 +592,7 @@ hr,
   .onboarding {
     padding: 22px 15%;
     align-self: center;
+    margin-top: 30px;
   }
   .onboarding .welcome {
     justify-content: center;
