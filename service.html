@@ -7,38 +7,41 @@
     <link rel="stylesheet" href="services.css">
 </head>
 <body>
-    <ul class="nav-list" id="nav-list">
+   <ul class="nav-list" id="nav-list">
       <div class="list">
-        <a href="index.html" class="active li-items">
-          <li><h1 class="ical">MED<span>ICAL</span></h1></li>
-        </a>
-        <a href="index.html" class="li-items">
-          <li>Home</li>
-        </a>
-        <a href="about.html" class="li-items">
-          <li>About us</li>
-        </a>
-        <a href="service.html" class="active li-items">
-          <li>Services</li>
-        </a>
-        <a href="doctors.html" class="li-items">
-          <li>Doctors</li>
-        </a>
-        <a href="./contact.html" class="li-items">
-          <li>Contact</li>
-        </a>
+        <div class="main_list">
+          <a href="index.html" class="active li-items">
+            <li><h1 class="ical">MED<span>ICAL</span></h1></li>
+          </a>
+          <div class="menu-icon" id="menu-icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="nav_items list" id="nav_items">
+          <a href="index.html" class="li-items">
+            <li>Home</li>
+          </a>
+          <a href="about.html" class="active li-items">
+            <li>About us</li>
+          </a>
+          <a href="service.html" class="li-items">
+            <li>Services</li>
+          </a>
+          <a href="doctors.html" class="li-items">
+            <li>Doctors</li>
+          </a>
+          <a href="./contact.html" class="li-items">
+            <li>Contact</li>
+          </a>
+        </div>
       </div>
-      <div class="right-top">
+      <div class="right-top nav_items" id="right_items">
         <!-- <i class="fa-solid fa-magnifying-glass fa-xs"></i> -->
         <a href="signin.html" class="signin">Sign in</a>
-        <a class="login">Sign up</a>
         <a href="Appointment.html" class="appointment">Appointment</a>
       </div>
     </ul>
-    <div class="menu-icon" id="menu-icon" onclick="myFunction()">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-
+    
     <section class="servimage">
         <div class="ser">
             <img class="servimage" src="./images/jaj.jpg" alt="">
@@ -159,9 +162,10 @@
     <hr>
 
     <div class="copyright">
-      <p>© 2023 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
+      <p>© 2023 Hospital’s name All Rights Reserved by MDC-LTD</p>
     </div>
   </div>
 </section>
+<script src="script.js"></script>
 </body>
 </html>

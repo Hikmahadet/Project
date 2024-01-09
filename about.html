@@ -18,8 +18,43 @@ family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     ></script>
 </head>
 <body>
-   
-    <ul class="nav-list" id="nav-list">
+<ul class="nav-list" id="nav-list">
+      <div class="list">
+        <div class="main_list">
+          <a href="index.html" class="active li-items">
+            <li><h1 class="ical">MED<span>ICAL</span></h1></li>
+          </a>
+          <div class="menu-icon" id="menu-icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="nav_items list" id="nav_items">
+          <a href="index.html" class="li-items">
+            <li>Home</li>
+          </a>
+          <a href="about.html" class="active li-items">
+            <li>About us</li>
+          </a>
+          <a href="service.html" class="li-items">
+            <li>Services</li>
+          </a>
+          <a href="doctors.html" class="li-items">
+            <li>Doctors</li>
+          </a>
+          <a href="./contact.html" class="li-items">
+            <li>Contact</li>
+          </a>
+        </div>
+      </div>
+      <div class="right-top nav_items" id="right_items">
+        <!-- <i class="fa-solid fa-magnifying-glass fa-xs"></i> -->
+        <a href="signin.html" class="signin">Sign in</a>
+        <a href="Appointment.html" class="appointment">Appointment</a>
+      </div>
+    </ul>
+    
+    
+    <!-- <ul class="nav-list" id="nav-list">
       <div class="list">
          <div class="main_list">
           <a href="index.html" class="active li-items">
@@ -48,7 +83,6 @@ family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       </div>
       </div>
       <div class="right-top">
-        <!-- <i class="fa-solid fa-magnifying-glass fa-xs"></i> -->
         <a href="signin.html" class="signin">Sign in</a>
         <a class="login">Login</a>
         <a class="appointment">Appointment</a>
@@ -56,7 +90,7 @@ family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     </ul>
     <div class="menu-icon" id="menu-icon" onclick="myFunction()">
       <i class="fa-solid fa-bars"></i>
-    </div>
+    </div> -->
 
     <section class="aboutus">
         <div class="abtimg">
@@ -66,7 +100,7 @@ family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
 
     <section class="welcome">
         <div class="sectioncontainer">
-            <img src="./images/206904843-portrait-virus-and-arms-crossed-with-a-doctor-black-woman-in-the-hospital-wearing-a-mask-for-safety.jpg" alt="">
+            <img class="arm" src="./images/206904843-portrait-virus-and-arms-crossed-with-a-doctor-black-woman-in-the-hospital-wearing-a-mask-for-safety.jpg" alt="">
 
             <div class="rightext">
                             <h2 class="wel">WELCOME TO MEDICAL</h2>
@@ -101,7 +135,7 @@ family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
 
 
      <section class="Doctors">
-
+      <div class="dtr">
     <div class="doctortext">
       <h3 class="med">TRUSTED CARE</h3>
       <h1 class="place">Our Doctors</h1>
@@ -140,7 +174,7 @@ family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
                   </div>
                   
               </div>
-          
+    </div>
     </div>
   </section>
 
@@ -244,6 +278,7 @@ To this end, Medical sets to provide quality Clinical Services (THE HOSPITAL), S
     </div>
   </div>
 </section>
+<script src="script.js"></script>
 </body>
 </html>
      

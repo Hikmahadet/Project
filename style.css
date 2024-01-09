@@ -51,6 +51,7 @@ li {
   cursor: pointer;
   margin-left: 25px;
   display: none;
+  color: white;
 }
 .appointment {
   border-radius: 20px;
@@ -81,7 +82,6 @@ span {
   flex-direction: row-reverse;
   justify-content: space-between;
   /* z-index: 1000px; */
-  padding: 22px 15%;
   /* width: 100%; */
 }
 .services {
@@ -138,15 +138,6 @@ span {
   background-color: darkblue;
   color: white;
 }
-
-#menu-icon {
-  font-size: 35px;
-  z-index: 10001;
-  cursor: pointer;
-  margin-left: 25px;
-  display: none;
-}
-
 .list {
   display: flex;
   gap: 20px;
@@ -312,8 +303,12 @@ li {
   color: darkblue;
   font: 1.5em sans-serif;
 }
-.backgroundimage {
+.background-image {
   margin-top: 30px;
+  width: 100%;
+}
+.swiper-slide{
+  width: 100% !important;
 }
 form {
   background-color: darkblue;
@@ -347,7 +342,7 @@ form {
 }
 .formpic {
   display: flex;
-  margin: 10px;
+  /* margin: 10px; */
   color: white;
 }
 .appointment_section {
@@ -526,7 +521,25 @@ hr,
     transition: 0.1s;
   }
 }
-
+@media (max-width:1110px) {
+  .pict{
+    flex-direction: column;
+  }
+  .component {
+    flex-direction: column;
+    place-items: center;
+  }
+  .contact-component {
+    width: 300px;
+    text-align: center;
+  }
+}
+@media (max-width:1000px) {
+    .appointment_section{
+      flex-direction: column;
+      background-image: none;
+    }
+}
 @media (max-width: 768px) {
   body {
     align-items: center;
@@ -546,7 +559,8 @@ hr,
     right: 0;
     left: 0;
     text-align: center;
-    display: none;
+    opacity: 0;
+    z-index: -50;
     height: 0%;
     flex-direction: column;
     text-align: left;
@@ -560,11 +574,11 @@ hr,
     position: fixed;
     top: 300px;
     flex-direction: column;
-    display: none;
   }
   .new_list {
-    height: 100%;
-    display: block;
+    height: 60%;
+    opacity: 100;
+     z-index: 1;
   }
   .main_list {
     display: flex;
@@ -590,7 +604,6 @@ hr,
     display: block;
   }
   .onboarding {
-    padding: 22px 15%;
     align-self: center;
     margin-top: 30px;
   }
