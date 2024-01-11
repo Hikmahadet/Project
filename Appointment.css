@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -80,7 +81,6 @@ span {
 }
 .aboutusimage{
     width: 100%;
-    height: 500px;
 }
 form {
   background-color: darkblue;
@@ -88,6 +88,13 @@ form {
   width: 491px;
   height: 445px;
 }
+.general{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .Email {
   width: 245px;
   height: 50px;
@@ -137,21 +144,23 @@ form {
     justify-content: space-evenly;
     margin-top: 20px;
 }
-.time{
-  background-color: darkblue;
-}
+
 .day{
   color: white;
   padding-inline: 20px;
   padding-block: 20px; 
 }
 .time{
+  background-color: darkblue;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   text-align: center;
-  padding-inline: 20px;
-  padding-block: 20px;
+  /* padding-inline: 20px;
+  padding-block: 20px; */
+  margin-inline: auto;
 }
+
 .line{
   margin-top: 10px;
 }
@@ -286,13 +295,11 @@ hr,
     flex-direction: column;
     /* justify-content: center; */
   }
-  /* .time{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-inline: 20px;
-  padding-block: 20px;
-} */
+  .time ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 768px) {
   body {

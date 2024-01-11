@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,6 @@
   transition: all.45s ease;
   /* background-color: blue; */
 }
-
 .nav-list a {
   color: white;
   font-size: 17px;
@@ -66,7 +66,7 @@ li {
   color: white;
 }
 span {
-  color: darkblue;
+  color:white;
 }
 .same {
   color: darkblue;
@@ -146,17 +146,28 @@ span {
   font-size: larger;
   font-weight: bold;
   color: darkblue;
-  font: 1.5em sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
 }
 .med {
   color: blue;
-  font-size: small;
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+}
+.centertext {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+.groupul_1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
 }
 .welcome {
   padding: 22px 15%;
 }
 .welcome-text {
-  font-size: larger;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -180,6 +191,7 @@ span {
   height: 60px;
   background-color: skyblue;
   border: none;
+  border-radius: 5px;
 }
 .leftbox {
   display: flex;
@@ -195,6 +207,7 @@ span {
 .center {
   text-align: center;
   margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 li {
@@ -262,6 +275,7 @@ li {
   border: none;
   width: 120px;
   height: 80px;
+  border-radius: 5px;
 }
 .diseas:hover {
   cursor: pointer;
@@ -321,18 +335,29 @@ form {
   height: 50px;
   border: 1px solid white;
   background-color: darkblue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
 }
 .textarea {
   width: 491px;
   height: 190px;
   border: 1px solid white;
   background-color: darkblue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+.emer{
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
 }
 .butt {
   width: 491px;
   height: 50px;
   border: 1px solid white;
   background-color: #3081d0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 .butt:hover {
   background-color: skyblue;
@@ -353,10 +378,17 @@ form {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.appoint{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+}
 
 .appointment_text {
   width: 300px;
   margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 .appointment_form {
   margin: auto;
@@ -366,9 +398,10 @@ form {
   margin-top: 50px;
 }
 .believe {
-  margin-inline: auto;
+  /* margin-inline: auto;
   width: fit-content;
-  height: fit-content;
+  height: fit-content; */
+  padding: 22px 15%;
 }
 .view {
   width: 317px;
@@ -454,7 +487,10 @@ figure {
 .lastsection {
   background-color: darkblue;
   margin-top: 50px;
-  /* display: flex; */
+  justify-content: center;
+  /* gap: 20px; */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
 }
 .lastone,
 .copyright {
@@ -463,10 +499,6 @@ figure {
 .lastthree {
   display: flex;
   gap: 30px;
-}
-.everything,
-.contactt {
-  padding: 22px 15%;
 }
 .lastone,
 .ptext {
@@ -490,7 +522,8 @@ hr,
   border: none;
 }
 .signin:hover {
-  background-color: #4694cb;
+  background-color: bisque;
+  color: black;
 }
 .login:hover {
   background-color: #87c4ff;
